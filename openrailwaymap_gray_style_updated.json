@@ -1,0 +1,27 @@
+{
+  "version": 8,
+  "name": "OpenRailwayMap gray lines (updated)",
+  "sources": {
+    "orm": {
+      "type": "raster",
+      "tiles": [
+        "https://tiles.openrailwaymap.org/standard/{z}/{x}/{y}.png"
+      ],
+      "tileSize": 512,
+      "attribution": "© OpenRailwayMap contributors"
+    }
+  },
+  "layers": [
+    {
+      "id": "orm-base",
+      "type": "raster",
+      "source": "orm",
+      "paint": {
+        "raster-saturation": -1,
+        "raster-brightness-min": 0.85,
+        "raster-brightness-max": 1.0,
+        "raster-contrast": -0.2
+      }
+    }
+  ]
+}
